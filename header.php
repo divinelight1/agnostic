@@ -5,7 +5,7 @@
 
     <head>
 
-    <title><?php wp_title(); ?> | <?php bloginfo('name'); ?></title>
+    <title><?php wp_title(); ?>  <?php bloginfo('name'); ?></title>
 
         <meta charset="utf-8" />
 
@@ -28,9 +28,6 @@
         <!-- Page Wrapper -->
 
             <div id="page-wrapper">
-
-
-
                 <!-- Header -->
 
                     <header id="header" class="alt">
@@ -49,16 +46,7 @@
 
                                         <ul>
 
-                                            <li><a href="index.html">Home</a></li>
-
-                                            <li><a href="generic.html">Generic</a></li>
-
-                                            <li><a href="elements.html">Elements</a></li>
-
-                                            <li><a href="#">Sign Up</a></li>
-
-                                            <li><a href="#">Log In</a></li>
-
+                                        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
                                         </ul>
 
                                     </div>
@@ -97,4 +85,4 @@
 
                     </section>
 
->
+
