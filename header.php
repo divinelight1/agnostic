@@ -67,9 +67,9 @@
 
                         <div class="inner">
 
-                            <h2>Aldin Mujkic</h2>
+                        <h2><?php echo get_option('maintittle'); ?></h2>
 
-                            <p>Frontend developer<br />
+                        <p><?php echo get_option('mainsubtittle'); ?><br />
 
                             </p>
 
@@ -84,5 +84,3 @@
                         <a href="#one" class="more scrolly">See More</a>
 
                     </section>
-
-

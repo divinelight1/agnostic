@@ -1,27 +1,5 @@
 
 <?php
-/** Step 2 (from text above). */
-add_action( 'admin_menu', 'my_menu' );
-
-/** Step 1. */
-function my_menu() {
-    add_options_page(
-        'My Options',
-        'Home Greeting Text',
-        'manage_options',
-        'my-unique-identifier',
-        'my_options'
-    );
-}
-
-/** Step 3. */
-function my_options() {
-    if ( !current_user_can( 'manage_options' ) ) {
-        wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
-    }
-    echo 'Here is where I output the HTML for my screen.';
-    echo '</div><pre>';
-}
 
 
 //menus 
@@ -51,6 +29,12 @@ function arphabet_widgets_init() {
 
 }
 add_action( 'widgets_init', 'arphabet_widgets_init' );
+
+
+require('theme-options.php');
+
+
+
 
 
 ?>
