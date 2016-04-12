@@ -30,7 +30,15 @@
             <div id="page-wrapper">
                 <!-- Header -->
 
-                    <header id="header" class="alt">
+                <header id="header" class="<?php 
+$addClass = is_front_page();
+if($addClass == true){
+echo "alt";
+}else{
+echo "altOther";
+}
+?>
+">
 
                     <h1><a href="<?php bloginfo('url'); ?>">Agnostic</a></h1>
 
@@ -61,26 +69,3 @@
 
 
 
-                <!-- Banner -->
-
-                    <section id="banner">
-
-                        <div class="inner">
-
-                        <h2><?php echo get_option('maintittle'); ?></h2>
-
-                        <p><?php echo get_option('mainsubtittle'); ?><br />
-
-                            </p>
-
-                            <ul class="actions">
-
-                                <li><a href="#" class="button special">Hire Me</a></li>
-
-                            </ul>
-
-                        </div>
-
-                        <a href="#one" class="more scrolly">See More</a>
-
-                    </section>
