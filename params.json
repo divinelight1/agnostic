@@ -1,0 +1,6 @@
+{
+  "name": "Agnostic",
+  "tagline": "free wordpress theme ",
+  "body": "/*\r\n * Theme Name: Agnostic\r\n * Theme URI: http://agnostic.aldinmujkic.website\r\n * Author: Aldin Mujkic\r\n * Author URI: http://www.aldinmujkic.website\r\n * Description: Simple Portfolio wordpress theme called agnostic :) \r\n * Version: 1.0.0\r\n * License: GNU General Public License v2 or later\r\n * License URI: http://www.gnu.org/licenses/gpl-2.0.html\r\n * Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready\r\n * Text Domain: agnostic\r\n *\r\n * This theme, like WordPress, is licensed under the GPL.\r\n * Use it to make something cool, have fun, and share what you've learned with others.\r\n * */",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
