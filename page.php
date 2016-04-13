@@ -1,12 +1,27 @@
 <?php require('header.php'); ?>
-<div class="allPagesHeaderBanner">
 
+<article id="main">
 
-    <?php 
+                        <header>
+
+                        <h2>
+<?php 
 echo get_the_title();
-    ?>
+?>
 
-</div>
+</h2>
+
+
+                        </header>
+
+                        <section class="wrapper style5">
+
+                            <div class="inner">
+
+
+
+
+                                <p>
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
 <div class="blogpost">
@@ -18,4 +33,17 @@ echo get_the_title();
 <p class="center">Sorry, but you are looking for something that isn't here.</p>
 <?php include (TEMPLATEPATH . "/searchform.php"); ?>
 <?php endif; ?>
+</p>
+
+
+
+
+
+                            </div>
+
+                        </section>
+
+                    </article>
+
+
 <?php require('footer.php'); ?>

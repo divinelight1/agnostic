@@ -5,7 +5,7 @@
 
     <head>
 
-    <title><?php wp_title(); ?>  <?php bloginfo('name'); ?></title>
+    <title> <?php bloginfo('name'); ?></title>
 
         <meta charset="utf-8" />
 
